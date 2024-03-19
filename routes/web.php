@@ -19,6 +19,8 @@ Route::get('/', function () {
 });
 
 
+Route::get('/home', [ProductController::class, 'home'])->name('product.home');
+
 Route::get('/product', [ProductController::class, 'index'])->name('product.index');
 
 Route::get('/product/create', [ProductController::class, 'create'])->name('product.create');
