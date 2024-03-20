@@ -3,7 +3,7 @@
 
 <head>
     <!-- Primary Meta Tags -->
-    <title>Impact - Design System</title>
+    <title>DOST - Translate</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="title" content="Impact - Design System">
@@ -69,73 +69,15 @@
     {{-- Text animation --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+    {{-- AOS ANIMATION --}}
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     {{-- particles.js --}}
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="{{ asset('front/css/stylesaos.css') }}" />
+    <link rel="stylesheet" href="{{ asset('front/css/aos.css') }}" />
 
 
-    <!-- Anti-flicker snippet (recommended)
-<style>.async-hide { opacity: 0 !important} </style>
-<script>
-    (function(a, s, y, n, c, h, i, d, e) {
-        s.className += ' ' + y;
-        h.start = 1 * new Date;
-        h.end = i = function() {
-            s.className = s.className.replace(RegExp(' ?' + y), '')
-        };
-        (a[n] = a[n] || []).hide = h;
-        setTimeout(function() {
-            i();
-            h.end = null
-        }, c);
-        h.timeout = c;
-    })(window, document.documentElement, 'async-hide', 'dataLayer', 4000, {
-        'GTM-K9BGS8K': true
-    });
-</script>
 
-<!-- Analytics-Optimize Snippet
-<script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-46172202-22', 'auto', {
-        allowLinker: true
-    });
-    ga('set', 'anonymizeIp', true);
-    ga('require', 'GTM-K9BGS8K');
-    ga('require', 'displayfeatures');
-    ga('require', 'linker');
-    ga('linker:autoLink', ["2checkout.com", "avangate.com"]);
-</script>
-<!-- end Analytics-Optimize Snippet -->
-
-    <!-- Google Tag Manager
-<script>
-    (function(w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start': new Date().getTime(),
-            event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-NKDMSK6');
-</script>
-<!-- End Google Tag Manager -->
 </head>
 
 <body>
@@ -255,7 +197,6 @@
     </header>
 
     <main>
-
         {{-- loader logo --}}
         <div class="preloader bg-soft flex-column justify-content-center align-items-center">
             <div class="loader-element">
@@ -270,7 +211,7 @@
 
         <!-- Hero -->
         <section class="text-white section-header pb-9 pb-lg-12 particles-container">
-            <div class="bg-primary" id="particles-js"></div>
+            <div class="bg-prismary" id="particles-js"></div>
             <div class="container">
                 <div class="mb-5 row justify-content-center">
                     <div class="text-center col-12 col-sm-8 col-md-7 col-lg-6">
@@ -311,10 +252,68 @@
                     </div>
                 </div>
             </div>
-
-            <div class="pattern bottom"></div>
-
+            {{-- <div class="pattern bottom"></div> --}}
         </section>
+
+
+        {{-- 2ND SECTION FPR THE PARALAX DESIGN --}}
+        <section id="second_section" class="section top-section">
+            <div class="content-container content-theme-dark">
+                <div class="content-inner">
+                    <div class="content-center">
+                        <h1>DOST - FNRI</h1>
+                        <p>FOOD & NUTRITION RESEARCH INSTITUTE <a href="http://finestpixels.com/" target="_blank">by
+                                PEDRO</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="second_section" class="section bottom-section">
+            <div class="content-container content-theme-light">
+                <div class="content-inner">
+                    <div class="content-center">
+                        <h1 class="animate__animated animate__bounce">TRANSLATE</h1>
+                        <p>NUTRITIONAL ASSESSMENT AND MONITORING DIVISION <a href="#" target="_blank">by
+                                PEDRO</a></p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         {{-- <div class="pt-0 section">
             <div class="container mt-n10 mt-lg-n12 z-2">
@@ -325,7 +324,7 @@
                 </div>
             </div>
         </div> --}}
-        <section class="pt-0 section section-lg">
+        {{-- <section class="pt-0 section section-lg">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -463,8 +462,10 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="section section-lg bg-soft">
+        </section> --}}
+
+
+        {{-- <section class="section section-lg bg-soft">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -1003,10 +1004,18 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> --}}
 
     </main>
 
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="{{ asset('front/assets/js/aos.js') }}"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        });
+    </script>
     <!-- Core -->
     <script src="{{ asset('vendor/jquery/dist/jquery.min.js') }}"></script>
     <script src="{{ asset('vendor/popper.js/dist/umd/popper.min.js') }}"></script>

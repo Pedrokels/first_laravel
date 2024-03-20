@@ -21,6 +21,8 @@
     },
     "dependencies": {
         "animate.css": "^4.1.1",
-        "particles.js": "^2.0.0"
+        "aos": "^3.0.0-beta.6",
+        "particles.js": "^2.0.0",
+        "yarn": "^1.22.22"
     }
 }
